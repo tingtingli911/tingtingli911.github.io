@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tingtingli911.github.io/"/>
-  <updated>2016-12-05T12:53:51.000Z</updated>
+  <updated>2017-03-22T04:03:56.000Z</updated>
   <id>http://tingtingli911.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node使用笔记</title>
+    <link href="http://tingtingli911.github.io/2017/03/22/node%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>http://tingtingli911.github.io/2017/03/22/node使用笔记/</id>
+    <published>2017-03-22T03:54:08.000Z</published>
+    <updated>2017-03-22T04:03:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-npm-install-迷之失败"><a href="#1-npm-install-迷之失败" class="headerlink" title="1. npm install 迷之失败"></a>1. npm install 迷之失败</h4><p>主要报错内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! Darwin 16.4.0</span><br><span class="line">npm ERR! argv &quot;/usr/local/bin/node&quot; &quot;/usr/local/bin/npm&quot; &quot;install&quot; &quot;-g&quot; &quot;gulp-cli&quot;</span><br><span class="line">npm ERR! node v6.7.0</span><br><span class="line">npm ERR! npm  v3.10.3</span><br><span class="line">npm ERR! code ETIMEDOUT</span><br><span class="line">npm ERR! errno ETIMEDOUT</span><br><span class="line">npm ERR! syscall connect</span><br><span class="line"></span><br><span class="line">npm ERR! Cannot read property &apos;path&apos; of null </span><br></pre></td></tr></table></figure>
+<p>公司网络最近很差，开始怀疑公司网络＝》终端使用代理失败＝》终于找到类似问题，解决方案如下：<br><code>npm config set registry http://registry.npmjs.org/</code></p>
+<p>难道是因为https挂了？？</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-npm-install-迷之失败&quot;&gt;&lt;a href=&quot;#1-npm-install-迷之失败&quot; class=&quot;headerlink&quot; title=&quot;1. npm install 迷之失败&quot;&gt;&lt;/a&gt;1. npm install 迷之失败&lt;/h4&gt;&lt;p&gt;主要报错
+    
+    </summary>
+    
+    
+      <category term="node" scheme="http://tingtingli911.github.io/tags/node/"/>
+    
+  </entry>
   
   <entry>
     <title>初学ionic</title>
